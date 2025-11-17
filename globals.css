@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts wired through next/font, this is just fallback */
+body {
+  @apply bg-white text-gray-900;
+}
+
+.dark body {
+  @apply bg-slate-950 text-slate-50;
+}
+
+.card-hover {
+  @apply transition-transform duration-200 hover:-translate-y-1 hover:shadow-card;
+}
